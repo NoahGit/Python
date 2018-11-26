@@ -132,6 +132,18 @@ STATICFILES_DIRS = (
 
 LOGIN_REDIRECT_URL = '/blog/'
 
+#from django.core.mail import send_mail
+#send_mail("ee","tttttt","42967148@qq.com",['c5t4v@163.com'],fail_silently=False)
+#收邮件的邮箱必须是登陆用户的数据库包存的邮箱
+
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST_USER = '42967148@qq.com'
+EMAIL_HOST_PASSWORD = 'zpvdczodqubrbijf'
+EMAIL_PORT = 25
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = '42967148@qq.com'
+
+
 
 
 # from email.mime.text import MIMEText
